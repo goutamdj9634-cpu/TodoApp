@@ -1,0 +1,27 @@
+ @use "./features" as *;
+$container-width:  40rem;
+$btn-width: 19.75rem;
+
+
+.login {
+  section {
+    @include container($container-width, null, 2rem);
+    min-height: 37vh;
+    background-color: $color2;
+    border-radius: 9px;
+    margin-top: 30;
+    background-color:rgb(248, 248, 248);
+  
+
+    form {
+      @include flexBox(column, center, flex-start, 2rem);
+      @include inputs;
+
+      button {
+        @include styledText(0.9rem);
+        @include myButton($btn-width, 1rem);
+      }
+    }
+  }
+}
+

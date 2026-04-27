@@ -1,0 +1,29 @@
+@use "./features" as *;
+
+.header {
+  background-color: $color3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+
+  
+
+.art{
+   display: flex;
+    align-items: center;
+    text-align: center;
+    
+    > a {
+      @include styledText;
+      @include myButton;
+    }
+  }
+}
+
+
+.hii {
+      text-transform: uppercase;
+      color: $color2;
+      font-weight: 400;
+    }
